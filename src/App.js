@@ -1,26 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./components/Header";
+import ButtonContainer from "./components/ButtonContainer";
 
 function App() {
+
+  const data = [
+    [{ name: "Kick",bg:"#123456" }, { name: "Snare",bg:"green" }, { name: "Snap",bg:"#123" }],
+    [{ name: "Clap",bg:"red" }, { name: "Hat",bg:"#123" }, { name: "Crash",bg:"brown" }],
+    [{ name: "Bell",bg:"violet" }, { name: "Ride",bg:"pink" }, { name: "Rim",bg:"purple" }],
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        
-        </p>
-        <h1>hello everyone</h1>
-        <h2>this is kalai</h2>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="">
+        {data.map((item) => (
+          <ButtonContainer data={item} />
+        ))}
+      </div>
     </div>
   );
 }
