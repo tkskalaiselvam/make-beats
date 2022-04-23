@@ -1,0 +1,4 @@
+tempo 60bpm
+one beat per sec
+4 16s in a beat
+16 16s in a bar
