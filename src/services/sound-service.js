@@ -1,4 +1,4 @@
-import { Howl, Howler } from "howler";
+import { Howl } from "howler";
 
 let howl = new Howl({
     src: ["sounds/public_sprite.mp3"],
@@ -22,5 +22,24 @@ let howl = new Howl({
     },
   });
 
+  const beatColors = ["red", "yellow", "green", "blue", "purple"];
+  const channelColors = {
+      kick: "red",
+      snare: "green",
+      hihat_open: "blue",
+      tom_mid: "orange",
+      clap:"yellow",
+      rim:"fuchsia",
+      cymbal:"lime",
+      tom_low:"emerald",
+      hihat_closed:"teal",
+      cowbell:"cyan",
+      tom_hi:"sky",
+      conga_low:"indigo",
+      conga_mid:"violet",
+      conga_hi:"purple",
+      maracas:"pink",
+      clave:"rose"
+  };
 
-  export {howl};
+  export {howl,beatColors,channelColors};
